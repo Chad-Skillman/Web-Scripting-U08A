@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CIS255 U08A Pic-A-Pic</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<!--
+		CIS255 Chad Skillman U08A Pic-A-Pic
+		Objectives demonstrated:
+		GET method for interactive user request to return desired picture via server.
+		Creation of picture request form using radio buttons.
+	-->
+	<style>
+		body {
+			border: 2px solid black;
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 6%;
+			margin-bottom: 6%;
+			width: 80%;
+			background-color: greenyellow;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		h2{
+			text-align: center;
+		}
+
+		#form {
+			text-align: center;
+		}
+
+	</style>
+
+	<body>
+		<div id="site">
+			<h1>Top 1000cc Superbike by Manufacturer</h1>
+			<div id="form">
+				<form method="get" action="U08A-GET-proc.php">
+					<p>
+						<h2>Manufacturer:</h2>
+						<input type="radio" name="moto" value="Aprilia" />Aprilia
+						<input type="radio" name="moto" value="BMW" checked="" />BMW
+						<input type="radio" name="moto" value="Ducati" />Ducati
+						<input type="radio" name="moto" value="Honda" />Honda
+						<input type="radio" name="moto" value="Kawasaki" />Kawasaki
+						<input type="radio" name="moto" value="Suzuki" />Suzuki
+						<input type="radio" name="moto" value="Yamaha" />Yamaha
+					</p>
+		
+					<p>
+						<input type="Submit" value="View Superbike" />
+					</p>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
