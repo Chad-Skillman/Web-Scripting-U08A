@@ -10,16 +10,18 @@
 CIS255 Chad Skillman U08A Pic-A-Pic
 
 Demonstrated Objectives:
-
-
-
+Use of PHP
+Use of CSS
+Use of if else statements in PHP
+Array set assigned $pic variable if selected
 -->
 
 
 <style>
+/*CSS for returned display */
 body {
     background-color: lightskyblue;
-    object-position: center;
+    object-position: center;/*Could not get this to work to center image*/
 }
 
 
@@ -31,14 +33,14 @@ body {
 
 <?php
 
-//Show errors
+//Show errors I like this!!
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Get pic data sent by GET
 // isset() tests for data at the gateway, required on many servers
 // Radio buttons pass values ($pic)
-
+// Displays selected $pic page
 if(isset($_GET["moto"])) { $pic = $_GET["moto"]; } else { $pic = ""; }
 
 if($pic == "Aprilia"){

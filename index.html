@@ -12,6 +12,7 @@
 		Creation of picture request form using radio buttons.
 	-->
 	<style>
+		/*CSS for the Body*/
 		body {
 			border: 2px solid black;
 			margin-left: 10%;
@@ -22,6 +23,7 @@
 			background-color: greenyellow;
 		}
 
+		/*CSS to center h1, h2, and form*/
 		h1 {
 			text-align: center;
 		}
@@ -37,11 +39,11 @@
 	</style>
 
 	<body>
-		<div id="site">
-			<h1>Top 1000cc Superbike by Manufacturer</h1>
+		<div id="site"><!--id for future CSS input -->
+			<h1>Top 1000cc Superbike by Manufacturer</h1><!--Title of page-->
 			<div id="form">
-				<form method="get" action="U08A-GET-proc.php">
-					<p>
+				<form method="get" action="U08A-GET-proc.php"><!--page link for php -->
+					<p> <!--Input form of radio buttons-->
 						<h2>Manufacturer:</h2>
 						<input type="radio" name="moto" value="Aprilia" />Aprilia
 						<input type="radio" name="moto" value="BMW" checked="" />BMW
@@ -52,7 +54,7 @@
 						<input type="radio" name="moto" value="Yamaha" />Yamaha
 					</p>
 		
-					<p>
+					<p>  <!--Submit button-->
 						<input type="Submit" value="View Superbike" />
 					</p>
 				</form>
